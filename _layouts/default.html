@@ -1,8 +1,11 @@
-<html>
-<head>
-  <link rel="stylesheet" href="reset.css">
-</head>
-<body>
-{{ content }}
-</body>
+<!DOCTYPE html>
+<html class="no-js">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="content">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </body>
 </html>
