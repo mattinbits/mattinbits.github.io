@@ -2,11 +2,23 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "img/sample_feature_img_2.png"
 ---
+I am a software engineer currently specializing in Scala development
+(including Akka and Spark) and Big Data solutions based on the Hadoop eco-system.
+I also have experience programming in Java and Python, and using Docker
+to package and deliver software.
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+I am currently self employed as a contractor in the UK, and I am
+interested in contract and permanent opportunities in the Manchester area,
+or exciting permanent opportunities which offer a chance to work abroad.
 
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
+I am interested in and have experience with a wide range of computing
+related topics, beyond those I currently focus on professionally, and my I
+always relish the opportunity to learn something new.
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+Outside of the endlessly fascinating realm of computing, I am a keen amateur
+pianist and rugby player.
+
+[My current CV](/assets/Matthew_Livesey_CV_2016-01-09.pdf)
+
+![Picture of me](/img/me.jpg)
