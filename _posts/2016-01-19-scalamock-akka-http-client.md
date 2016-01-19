@@ -293,3 +293,5 @@ object PoliceUKDataClient extends App {
 {% endhighlight %}
 
 The full source code for this post is available on [Github](https://github.com/mattinbits/blog_examples).
+
+Comments and corrections always welcome.
