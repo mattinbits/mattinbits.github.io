@@ -124,3 +124,7 @@ img[align=right] {
 p code {
   color: $para-code-color;
 }
+
+section.post-content > pre > code {
+  color: $para-code-color;
+}
