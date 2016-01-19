@@ -43,7 +43,7 @@ theme:
 
   # Scripts
   google_analytics: "UA-70290361-1"
-  disqus_shortname:
+  disqus_shortname: matthew_livesey
   katex: true # Enable if using math markup
 
   # Localization strings
