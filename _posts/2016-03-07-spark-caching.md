@@ -3,8 +3,6 @@ layout: post
 title: Spark caching by example
 ---
 
-This post is a WIP
-
 [Apache Spark](http://spark.apache.org/) is a powerful tool for distributed
 processing of data. Data, whether represented as [RDDs](http://spark.apache.org/docs/latest/quick-start.html#more-on-rdd-operations)
 or as [DataFrames](http://spark.apache.org/docs/latest/sql-programming-guide.html#dataframes)
@@ -56,7 +54,7 @@ the Web UI for the Spark Master.
 
 The interactive Spark REPL can be started by running `$SPARK_HOME/bin/spark-shell`.
 
-A small RDD can be created an cached in the REPL with:
+A small RDD can be created and cached in the REPL with:
 
 {% highlight Scala %}
 val smallRdd = sc.parallelize(List("a", "b", "c")).setName("small RDD")
@@ -111,18 +109,48 @@ RDD Name | Storage Level | Cached Partitions | Fraction Cached | Size in Memory 
 med RDD | Memory Deserialized 1x Replicated | 2 |	100% | 4.9 KB | 0.0 B | 0.0 B
 med RDD Serialized | Memory Serialized 1x Replicated | 2 |	100% | 2.4 KB | 0.0 B | 0.0 B
 
+This difference in cached size can make the difference between data fitting
+in cache or not, which could have significant performance implications.
+
+In some cases Spark may not have sufficient memory to cache the entire RDD,
+but still be able to cache some of the partitions.
+
+For example:
+
 {% highlight Scala %}
-val hugishRdd =sc.parallelize(0 to 4999).
+val largeRdd =sc.parallelize(0 to 7999).
   flatMap(i => (0 to 999).
   map(x => i*1000 + x)).
   map(i => s"data value of $i")
 
-hugishRdd.persist(StorageLevel.MEMORY_ONLY).foreach(_ => {})
+largeRdd.setName("large RDD").persist(StorageLevel.MEMORY_ONLY).foreach(_ => {})
+{% endhighlight %}
 
-val otherHugishRdd =sc.parallelize(0 to 4999).
-  flatMap(i => (0 to 999).
-  map(x => i*1000 + x)).
-  map(i => s"data value of $i")
+This results in the following entry in the Storage tab:
 
-otherHugishRdd.persist(StorageLevel.MEMORY_ONLY_SER).foreach(_ => {})
+RDD Name | Storage Level | Cached Partitions | Fraction Cached | Size in Memory |	Size in ExternalBlockStore | Size on Disk
+------|----------------|----|----|----|------|--------------
+large RDD | Memory Deserialized 1x Replicated | 1 |	50% | 341.15 MB | 0.0 B | 0.0 B
+
+In other cases, there may not be enough memory to cache any partitions. This will
+not result in an error or Exception from Spark, but the data will not be cached
+and subsequent executions using the RDD will need to recompute it.
+
+## Using foreach in Python
+
+When using `pyspark`, caching works in the same way, but calling foreach requires
+a function, which we want to perform no operations. One way is to define a `no_op`
+function:
+
+Launch `pyspark` with
+
+    $SPARK_HOME/bin/pyspark
+
+Then execute the following:
+
+{% highlight Python %}
+def no_op(x):
+    pass
+
+sc.parallelize(['a', 'b', 'c']).cache().foreach(no_op)
 {% endhighlight %}
