@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Avoiding Mutable types in Akka - by Example
+title: Avoiding Mutable types in Akka, by Example
 ---
 
 Early on in my experience programming with [Akka](http://akka.io/),
