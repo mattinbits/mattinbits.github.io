@@ -19,6 +19,6 @@ always relish the opportunity to learn something new.
 Outside of the endlessly fascinating realm of computing, I am a keen amateur
 pianist and rugby player.
 
-[My current CV](/assets/Matthew_Livesey_CV_2016-01-09.pdf)
+[My current CV](/assets/Matthew_Livesey_CV_2016-06-16.pdf)
 
 ![Picture of me](/img/me.jpg)
