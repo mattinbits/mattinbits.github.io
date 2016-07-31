@@ -10,6 +10,8 @@ to make functional programming in Java more natural. So as a Scala developer,
 if required to switch back to Java, what can be done to maintain a functional style?
 
 This is the first in a series of posts to address this question. Today, immutability.
+The second part is on
+[replacing Option and Try]({% post_url 2016-07-31-java-for-scala-option-try %}).
 
 ## Immutability
 
