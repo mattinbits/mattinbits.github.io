@@ -72,45 +72,44 @@ object StructuredStreaming extends App {
 When we run this program with the socket program running, it will periodically
 output an updated word count until we terminate it:
 
-```
-[info] +-------+-----+
-[info] |  value|count|
-[info] +-------+-----+
-[info] |    not|   37|
-[info] |     be|   74|
-[info] |    cat|   37|
-[info] |  story|   37|
-[info] |    mat|   37|
-[info] |     on|   37|
-[info] |    sat|   37|
-[info] |morning|   37|
-[info] |  glory|   37|
-[info] |    the|  111|
-[info] | what's|   37|
-[info] |     or|   37|
-[info] |     to|   74|
-[info] +-------+-----+
+    [info] +-------+-----+
+    [info] |  value|count|
+    [info] +-------+-----+
+    [info] |    not|   37|
+    [info] |     be|   74|
+    [info] |    cat|   37|
+    [info] |  story|   37|
+    [info] |    mat|   37|
+    [info] |     on|   37|
+    [info] |    sat|   37|
+    [info] |morning|   37|
+    [info] |  glory|   37|
+    [info] |    the|  111|
+    [info] | what's|   37|
+    [info] |     or|   37|
+    [info] |     to|   74|
+    [info] +-------+-----+
 
-...
+    ...
 
-[info] +-------+-----+
-[info] |  value|count|
-[info] +-------+-----+
-[info] |    not|   48|
-[info] |     be|   96|
-[info] |    cat|   48|
-[info] |  story|   47|
-[info] |    mat|   48|
-[info] |     on|   48|
-[info] |    sat|   48|
-[info] |morning|   47|
-[info] |  glory|   47|
-[info] |    the|  143|
-[info] | what's|   47|
-[info] |     or|   48|
-[info] |     to|   96|
-[info] +-------+-----+
-```
+    [info] +-------+-----+
+    [info] |  value|count|
+    [info] +-------+-----+
+    [info] |    not|   48|
+    [info] |     be|   96|
+    [info] |    cat|   48|
+    [info] |  story|   47|
+    [info] |    mat|   48|
+    [info] |     on|   48|
+    [info] |    sat|   48|
+    [info] |morning|   47|
+    [info] |  glory|   47|
+    [info] |    the|  143|
+    [info] | what's|   47|
+    [info] |     or|   48|
+    [info] |     to|   96|
+    [info] +-------+-----+
+
 
 Note that the counts constantly increase at each reporting interval. Because we
 are doing `words.groupBy("value").count()`, we are counting all the words that
