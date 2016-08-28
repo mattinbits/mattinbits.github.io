@@ -3,7 +3,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.mjlivesey.co.uk" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
-theme:
+stheme:
   # Meta
   title: M J Livesey
   avatar: logo.png
