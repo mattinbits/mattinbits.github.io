@@ -112,5 +112,6 @@ output an updated word count until we terminate it:
 
 
 Note that the counts constantly increase at each reporting interval. Because we
-are doing `words.groupBy("value").count()`, we are counting all the words that
+are doing `words.groupBy("value").count()`,
+we are counting all the words that
 we've ever seen, and this count is simply being updated at each interval.
