@@ -77,7 +77,7 @@ RDD Name | Storage Level | Cached Partitions | Fraction Cached | Size in Memory 
 ------|----------------|----|----|----|------|--------------
 small RDD | Memory Deserialized 1x Replicated | 2 |	100% | 192.0 B | 0.0 B | 0.0 B
 
-Calling `cache()` on an `RDD` is simply a special case of calling the `unpersist()`
+Calling `cache()` on an `RDD` is simply a special case of calling the `persist()`
 method with a storage type of `MEMORY_ONLY`. Another option is `MEMORY_ONLY_SER`
 which serialized the contents of the RDD into byte buffers rather than caching the
 Java objects themselves. This generally leads to significantly smaller memory usage.
