@@ -11,7 +11,7 @@ to package and deliver software.
 I live in Denmark and I am not currently looking for employment opportunities.
 
 I am interested in and have experience with a wide range of computing
-related topics, beyond those I currently focus on professionally, and my I
+related topics, beyond those I currently focus on professionally, and  I
 always relish the opportunity to learn something new.
 
 Outside of the endlessly fascinating realm of computing, I am a keen amateur
