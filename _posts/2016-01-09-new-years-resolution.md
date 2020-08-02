@@ -9,7 +9,7 @@ to get it off the ground.
 
 I've been inspired by [Martin Odersky's post](http://www.scala-lang.org/blog/2016/01/02/new-year-resolutions.html) to
 use the turning of the year as an incentive. If it's good enough for him,
-then certainly it is good enough for me.I'm resolving to write (at least)
+then certainly it is good enough for me. I'm resolving to write (at least)
 one post per month. And this doesn't count as January's!
 
 The topics will likely be from issues encountered during my professional activities
