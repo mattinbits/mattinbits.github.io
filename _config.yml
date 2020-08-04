@@ -12,9 +12,9 @@ stheme:
 
   # Header and footer text
   header_text: >
-     <p>Matt Livesey is a Software Engineer with an interest in a wide range of aspects of computing.</p>
+     <p>Matt Livesey is a Software Engineer with an interest in a wide range of aspects of computing, especially the development of resilient, scalable systems.</p>
 
-     <p>Currently working as a Scala and Big Data Engineer at Nordea in Denmark.</p>
+     <p>Currently working as a Site Reliability Engineer at Nordea in Denmark.</p>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
