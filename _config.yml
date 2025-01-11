@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.mjlivesey.co.uk" # the base hostname & protocol for your site
+url: "https://www.mjlivesey.co.uk" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 stheme:
@@ -12,9 +12,9 @@ stheme:
 
   # Header and footer text
   header_text: >
-     <p>Matt Livesey is a Software Engineer with an interest in a wide range of aspects of computing, especially the development of resilient, scalable systems.</p>
+     <p>Matt Livesey is an engineering leader with wide ranging interests in computing, especially the development of resilient, scalable systems.</p>
 
-     <p>Currently working as a Site Reliability Engineer at Nordea in Denmark.</p>
+     <p>Currently Team Lead for Engineering and Analytics at ADC Consulting in Denmark.</p>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
@@ -37,7 +37,7 @@ stheme:
   stack_exchange:  "http://stackoverflow.com/users/5142537/mattinbits"
   steam:
   tumblr:
-  twitter: "mattinbits"
+  twitter:
   wordpress:
   youtube:
 

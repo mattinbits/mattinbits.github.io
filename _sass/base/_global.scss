@@ -92,7 +92,8 @@ p, ol, ul, dl, .math-display {
   width: 100%;
 }
 ol, ul {
-  list-style-position: inside;
+  list-style-position: outside;
+  padding-left: 1em;
 }
 hr {
   border: 0;
